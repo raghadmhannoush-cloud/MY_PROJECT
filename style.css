@@ -1,0 +1,242 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: #e6e08c;
+    color: #aa781b;
+    line-height: 1.5;
+}
+
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e7f6d, #2c3e50);
+    color: white;
+    gap: 20px;
+}
+
+    
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;           
+    border: 3px solid white;      
+    background-color: white;
+    z-index: 6;                  
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+     
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(235, 230, 203, 0.55); 
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 2;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: rgba(53, 83, 29, 0.897);
+    display: block;
+    max-width: 1000px;
+    padding: 170px;
+    background: rgba(231, 209, 209, 0.144);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 35px 35px rgba(0,0,0,0.3);
+}
+
+.hero-content h1 {
+    font-size: 35px;
+    margin-bottom: 10px 0;
+   display: block;
+  font-family:'Amiri' serif;
+
+}
+
+.hero-subtitle {
+    font-size: 30 px;
+    font-weight: 700;
+    margin-bottom: 8px 0;
+    font-family:'Amiri';
+}
+
+.hero-content p {
+    font-size: 25px;
+    line-height:25px;
+    margin: 8px 0;
+    letter-spacing: 1 px;
+    font-family:'Amiri' ;
+
+}
+
+
+.hero-quote {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 19px;
+} 
+
+.hero button{
+    padding: 15px 15px;
+    background:#e0b937;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero button:hover{ background: #cfa24f;
+
+}
+
+nav {
+    margin-top: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(143, 101, 24, 0.479);
+    padding: 10px 16px;
+    margin: 4px;
+    border-radius: 55px;
+    font-size: 14px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    direction: rtl;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #1e7f6d;
+}
+
+
+section {
+    background-color: white;
+    margin: 50px auto;
+    padding: 30px;
+    width: 85%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #754d18;
+    font-size: 26px;
+
+    padding: 12px 30px;
+    background:#e0b937;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+form input {
+    padding: 10px;
+    width: 220px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #94bbb4;
+}
+
+form button {
+    padding: 10px 22px;
+    border: none;
+    background-color: #c0aa2b;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #8d4f09;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #834009;
+    color: white;
+    padding: 12px;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f6f9;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 50px 0;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #a78439;
+    color: white;
+    font-size: 20px;
+    font-family: 'Amiri';
+}

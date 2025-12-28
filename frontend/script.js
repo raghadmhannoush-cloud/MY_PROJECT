@@ -327,4 +327,5 @@ fetch("http://localhost:3000/api/students")
  row.innerHTML =
  <td>${student.id}</td><td>${student.first_name}</td><td>${student.last_name}</td><td>${student.gender}</td><td>${student.birth_date}</td><td>${student.phone_number}</td><td>${student.address}</td><td>${student.join_date}</td><td>${student.status}</td>;
         });
+
         });

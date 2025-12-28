@@ -1,0 +1,258 @@
+ <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap">
+    <title>دار المودة لتحفيظ القرآن الكريم</title>
+</head>
+<body>
+<header>
+    <div class="c">
+        
+      <img src="https://m.media-amazon.com/images/I/71tO3oeRtML._SY425_.jpg" class="logo">
+ <nav>
+        <a href="#students">الطلاب</a> |
+        <a href="#teachers">المدرسون</a> |
+        <a href="#classes">الحلقات</a> |
+        <a href="#subjects">المواد</a> |
+        <a href="#registrations">التسجيل</a> |
+        <a href="#attendance">الحضور</a> |
+        <a href="#payments">الرسوم</a> |
+        <a href="#class_teacher">توزيع المدرسين</a> |
+        <a href="#class_subject">توزيع المواد</a>
+    </nav>
+</header>
+    </div>
+    <div >
+        <header class="hero">
+    <img src="image.html.jpg" alt="Dar Al Mawadda" class="hero-img">
+
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>مرحبًا بكم في دار المودة لتحفيظ القرآن الكريم</h1><hr>
+        <p class="hero-subtitle">تعلّم – حفظ – تدبّر</p><hr>
+        <p>مع نخبة من المختصين في تعليم وتحفيظ كتاب الله</p>
+        <p class="hero-quote">
+           {...نورٌ لقلبك ورفعةٌ لدنياك وآخرتك}
+        </p><hr>
+         <button> انضم الينا الاّن</button>
+    </div>
+</header>
+
+<hr>
+
+<section id="students">
+    <h2>واجهة الطلاب</h2>
+
+    <form method="post" action="">
+        <input type="text" name="first_name" placeholder="first_name">
+        <input type="text" name="last_name" placeholder="last_name">
+        <input type="text" name="gender" placeholder="gender">
+        <input type="date" name="birth_date">
+        <input type="text" name="phone_number" placeholder="phone_number">
+        <input type="text" name="address" placeholder="address">
+        <input type="date" name="join_date">
+        <input type="text" name="status" placeholder="status">
+    
+<button type="submit">Add Student</button>
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>student_id</th>
+            <th>first_name</th>
+            <th>last_name</th>
+            <th>gender</th>
+            <th>birth_date</th>
+            <th>phone_number</th>
+            <th>address</th>
+            <th>join_date</th>
+            <th>status</th>
+        </tr>
+    </table>
+</section>
+
+<hr>
+
+<section id="teachers">
+    <h2>واجهة المدرسين</h2>
+
+    <form method="post" action="">
+        <input type="text" name="first_name" placeholder="first_name">
+        <input type="text" name="last_name" placeholder="last_name">
+        <input type="text" name="phone_number" placeholder="phone_number">
+        <input type="date" name="hiring_date">
+        <input type="text" name="speciality" placeholder="speciality">
+        <input type="text" name="status" placeholder="status">
+        <button type="submit">Add Teacher</button>
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>teacher_id</th>
+            <th>first_name</th>
+            <th>last_name</th>
+            <th>phone_number</th>
+            <th>hiring_date</th>
+            <th>speciality</th>
+            <th>status</th>
+        </tr>
+    </table>
+</section>
+
+<hr>
+
+<section id="classes">
+    <h2>واجهة الحلقات</h2>
+
+    <form method="post" action="">
+        <input type="text" name="class_name" placeholder="class_name">
+        <input type="text" name="level" placeholder="level">
+        <input type="text" name="description" placeholder="description">
+        <button type="submit">Add Class</button>
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>class_id</th>
+            <th>class_name</th>
+            <th>level</th>
+            <th>description</th>
+        </tr>
+    </table>
+</section>
+
+<hr>
+
+<section id="subjects">
+    <h2>واجهة المواد</h2>
+ <form method="post" action="">
+        <input type="text" name="subject_name" placeholder="subject_name">
+        <input type="text" name="description" placeholder="description">
+        <button type="submit">Add Subject</button>
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>subject_id</th>
+            <th>subject_name</th>
+            <th>description</th>
+        </tr>
+    </table>
+</section>
+
+<hr>
+
+<section id="registrations">
+    <h2>واجهة التسجيل</h2>
+
+    <form method="post" action="">
+        <input type="number" name="student_id" placeholder="student_id">
+        <input type="number" name="class_id" placeholder="class_id">
+        <input type="date" name="registration_date">
+        <input type="text" name="notes" placeholder="notes">
+        <button type="submit">Register</button>
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>registration_id</th>
+            <th>student_id</th>
+            <th>class_id</th>
+            <th>registration_date</th>
+            <th>notes</th>
+        </tr>
+    </table>
+</section>
+
+<hr>
+<section id="attendance">
+    <h2>واجهة الحضور</h2>
+
+    <form method="post" action="">
+        <input type="number" name="student_id" placeholder="student_id">
+        <input type="date" name="date">
+        <input type="text" name="status" placeholder="status">
+        <input type="text" name="note" placeholder="note">
+        <button type="submit">Add Attendance</button>
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>attendance_id</th>
+            <th>student_id</th>
+            <th>date</th>
+            <th>status</th>
+            <th>note</th>
+        </tr>
+    </table>
+</section>
+
+<hr>
+<section id="payments">
+    <h2>واجهة الرسوم</h2>
+
+    <form method="post" action="">
+        <input type="number" name="student_id" placeholder="student_id">
+        <input type="number" name="amount" placeholder="amount">
+        <input type="date" name="payment_date">
+        <input type="text" name="method_pay" placeholder="method_pay">
+        <input type="text" name="note" placeholder="note">
+        <button type="submit">Add Payment</button>
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>payment_id</th>
+            <th>student_id</th>
+            <th>amount</th>
+            <th>payment_date</th>
+            <th>method_pay</th>
+            <th>note</th>
+        </tr>
+    </table>
+</section>
+
+<hr>
+<section id="class_teacher">
+    <h2>توزيع المدرسين على الحلقات</h2>
+
+    <form method="post" action="">
+        <input type="number" name="class_id" placeholder="class_id">
+        <input type="number" name="teacher_id" placeholder="teacher_id">
+        <button type="submit">Assign</button>
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>class_id</th>
+            <th>teacher_id</th>
+        </tr>
+    </table>
+</section>
+
+<hr>
+<section id="class_subject">
+    <h2>توزيع المواد على الحلقات</h2>
+
+    <form method="post" action="">
+        <input type="number" name="class_id" placeholder="class_id">
+        <input type="number" name="subject_id" placeholder="subject_id">
+        <button type="submit" data-count="0">Assign</button>
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>class_id</th>
+            <th>subject_id</th>
+        </tr>
+    </table>
+</section>
+<footer>
+ <p>2025 جميع الحقوق محفوظة@ معهد دارالمودة </p>
+</footer>
+</body>
+</html>
